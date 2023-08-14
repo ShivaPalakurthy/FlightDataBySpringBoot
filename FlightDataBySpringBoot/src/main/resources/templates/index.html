@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmln:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Domestic Reservation Application</title>
+</head>
+<body>
+<div align="center">
+	<h1>Flight Details</h1>
+	<table border="1" cellpadding="5">
+	<thead>
+				<th>Flight Id</th>
+				<th>Flight Detail ID</th>
+				<th>Admin Id</th>
+				<th>Flight Company</th>
+				<th>Flight Source</th>
+				<th>Flight Destination</th>
+				<th>Travel Date & Time</th>
+				<th>BTotal Seats</th>
+				<th>BSeats Available</th>
+				<th>BPrice</th>
+				<th>FTotal Seats</th>
+				<th>FSeats Available</th>
+				<th>FPrice</th>
+				<th>ETotal Seats</th>
+				<th>ESeats Available</th>
+				<th>EPrice</th>
+				<th>Total Seats</th>
+				<th>Seats Available</th>
+				<th>Actions</th>
+	</thead>
+		<tbody>
+		<tr th:each="fd : ${listFlight}">
+			<td th.text="${fd.flightid}">Flight Id</td>
+			<td th.text="${fd.flightdetailid}">Flight Detail ID</td>
+			<td th.text="${flight.adminid}">Admin Id</td>
+			<td th.text="${flight.flightcompany}">Flight Id</td>
+			<td th.text="${flight.flightsrc}">Flight Id</td>
+			<td th.text="${flight.flightdesc}">Flight Id</td>
+			<td th.text="${flight.traveldatetime}">Flight Id</td>
+			<td th.text="${flight.btotalseats}">Flight Id</td>
+			<td th.text="${flight.bseatavailable}">Flight Id</td>
+			<td th.text="${flight.bprice}">Flight Id</td>
+			<td th.text="${flight.ftotalseats}">Flight Id</td>
+			<td th.text="${flight.fseatavailable}">Flight Id</td>
+			<td th.text="${flight.fprice}">Flight Id</td>
+			<td th.text="${flight.etotalseats}">Flight Id</td>
+			<td th.text="${flight.eseatavailable}">Flight Id</td>
+			<td th.text="${flight.eprice}">Flight Id</td>
+			<td th.text="${flight.totalseats}">Flight Id</td>
+			<td th.text="${flight.totalavailableseats}">Flight Id</td>
+		</tbody>
+		
+	</table>
+</div>
+</body>
+</html>
